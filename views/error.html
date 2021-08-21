@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>千千音乐</title>
+    <link rel="icon" href="https://music.taihe.com/favicon.ico">
+</head>
+
+<body>
+    用户名或者密码错误<br />
+    <span class="timer">5</span>秒之后自动跳转...<br />
+    <a href="/login">点击直接跳转</a>
+</body>
+
+</html>
+<script>
+    let timer = document.querySelector(".timer").innerText;
+    timer = parseInt(timer);
+    setInterval(() => {
+        timer--;
+        document.querySelector(".timer").innerText = timer;
+        if (timer < 1) {
+            window.location.href = "/login";
+        }
+    }, 1000)
+</script>

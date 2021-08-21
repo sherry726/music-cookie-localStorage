@@ -1,0 +1,20 @@
+{
+  "name": "music",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.13.1",
+    "koa-body": "^4.2.0",
+    "koa-router": "^10.0.0",
+    "koa-static-cache": "^5.1.4",
+    "md5": "^2.3.0",
+    "nodemon": "^2.0.12",
+    "nunjucks": "^3.2.3"
+  }
+}
